@@ -1,152 +1,94 @@
 <!DOCTYPE html>
 <html>
- 
-<head>
-    <title>Page Title</title>  
-</head>
+
+<head></head>
 <style>
-    div#colonne1 {
-        float: left; 
-        width: 400px;
-        background: yellow;
+    body {
+        font-family: Helvetica;
+        font-size: 1.4em;
+        color: white;
+        text-align: center;
     }
 
-    div#centre {
-       
-        background: white;
+    .container {
+        display: grid;
+        grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+        grid-template-areas:
+            "p t t "
+            "i a b "
+            "m c d "
+            "h r r "
+        ;
     }
 
-    div#section {
-        margin-bottom: 70px;
+    section#t {
+        grid-area: t;
+        background-color: #D0021B;
     }
 
-    div#section-gauche {
-        float: left;
-    } 
+    section#p {
+        grid-area: p;
+        background-color: #9013FE;
+    }
+
+    section#i {
+        grid-area: i;
+        background-color: #F8E71C;
+    }
+
+    section#m {
+        grid-area: m;
+        background-color: rgb(136, 130, 70);
+    }
+
+    section#h {
+        grid-area: h;
+        background-color: rgb(28, 98, 248);
+    }
+
+    section#a {
+        grid-area: a;
+        background-color: rgb(200, 10, 150);
+    }
+
+    section#b {
+        grid-area: b;
+        background-color: rgb(100, 150, 20);
+    }
+
+    section#c {
+        grid-area: c;
+        background-color: rgb(10, 50, 50);
+    }
+
+    section#d {
+        grid-area: d;
+        background-color: rgb(100, 20, 200);
+    }
+
+    section#r {
+        grid-area: r;
+        background-color: rgb(150, 200, 70);
+    }
 
 
 
-    div#titre {
-        background: gray;
-        color: yellow;
-        float: left;
-    } 
 
 
-
-    div#contacte-info {
-        text-indent: 30%;
-    } 
-
-  
+    footer {
+        grid-area: f;
+        background-color: #50E3C2;
+    }
 </style>
 
 <body>
 
-    <div id="colonne1">
-
-
-        <div classe="photo">
-            <img src="photoProfile.png" alt="Ancion Anthony" height="170" width="170"
-                style="float:left;margin:0 0px 0 20px;" /></br></br></br></br></br></br></br></br></br></br>
-
-        </div>
-
-        <div classe="contact-titre">
-            <div classe ="titre">
-                <h2 style="text-align:center">CONTACT</h2>
-            </div>
-           
-
-            <div class="contacte-info">
-                <p>Né le 27 Septembre2000</p>
-                <p>39,Square de la lys-6700 Arlon</p>
-                <p>+0492 83 74 82 </p>
-                <p>anthony.ancioni@cloud.com</p>
-                <p>Nationalite:Belge,Luxembourgeoise</p>
-
-            </div>
-            <h2>CONNAISSANCES LINGUISTIQUES</h2>
-                <div class="section-gauche">
-                    <p>Français :langue maternelle </p>
-                    <p>Anglais :stages en Californie, solides bases dans cette langue. </p>
-
-
-                </div>
-               
-
-
-
-                <div class="Section">
-                    <div classe ="titre">
-                        <h2>HOBBIES</h2>
-                    </div>
-                    <div class="section-gauche">
-                        <p>Sport :Handball </p>
-                        <p>Voyages:Etats-Unis, Japon, Chine </p>
-                        <p>Bénévole:dans une église catholique aux Etats-Unis</p>
-
-                    </div>
-                 
-                </div>
-            
-
-
-        </div>
-
-
-
-    </div>
-    <div id="centre">
-
-
-        <div class="Section">
-            <h2>Etudes et formation</h2>
-            <div class="section-gauche">
-                <p>2020-2019 :Technifutur DÉVELOPPEUR .NET</p>
-                <p>Août 2019 :STANFORD UNIVERSITY - california</p>
-                <p>Août 2018 :SANTA CLARA UNIVERSITY - california</p>
-                <p>2017-2019 :INSTITUT TECHNIQUE ETIENNE LENOIR ARLON</p>
-                <p>2012-2017 :2012-2017 INSTITUT NOTRE-DAME ARLON</p>
-
-            </div>
-           
 
 
 
 
 
-            
-
-
-            <div class="Section">
-                <h2>Experience</h2>
-                <div classe="text info">
-                    <p>Experience in the United States;
-                        Bénévole depuis 2 ans auprès de la société TA-DA ! (language learning) à San Francisco,
-                        principalement en été. La société a été fondée par mon ancienne professeur d’anglais. J’ai été
-                        impliqué dans différents projets techniques et de traduction.<br />
-                        Durant cette période, j’ai résidé dans des ‘Hacker house’, logements bon marché à proximité de
-                        l’université de Stanford où j’ai intégré des start-up informatique tenues par mes
-                        co-locataires.<br />
-    
-                        Formation de longue durée chez Technifutur à Liège, d’Octobre 2019 à Juillet 2020, dont l’objet est
-                        de couvrir les technologies suivantes ;<br />
-    
-                        ⦁ Langage C# 6.0<br />
-                        ⦁ Entity Framework 6 / Ado .Net / Linq<br />
-                        ⦁ WindowsForms / Windows Presentation Foundation <br />
-                        ⦁ Windows Communication Foundation<br />
-                        ⦁ .NET core 2 /Xamarin<br />
-                        ⦁ SQL / Conception de base de données<br />
-                        ⦁ SQL Serveur 2014, Programmation et administration<br />
-                        ⦁ HTML5 / CSS3 / Javascript / Bootstrap<br />
-                        ⦁ Web Forms / MVC5<br />
-                        ⦁ UML<br />
-                    </p>
-                </div>
 
 </body>
-
 
 </html>
